@@ -5,7 +5,7 @@
 <div class="grid-tabs">
     <button title="Character" name="act_tab_character" type="action">character</button>
     <button data-i18n="ark" name="act_tab_ark" title="Ark" type="action">ark</button>
-    <img alt="Mutant Year Zero" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Mutant%20Year%20Zero/images/logo.jpg">
+    <img alt="Carnival Row Zero" src="https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Carnival%20Row%20Zero/images/logo.jpg">
     <button data-i18n="zone-log" name="act_tab_log" title="Log" type="action">Zone Log</button>
     <button data-i18n="npc" name="act_tab_npc" title="NPC" type="action">npc</button>
 </div>
@@ -173,12 +173,12 @@
                         <h2 data-i18n="total">Total</h2>
                     </div>
                     <div class="grid skills-grid skill-orange">
-                        <!--- ENDURE --->
-                        <button type="action" name="act_dice_pool_endure"><span data-i18n="endure">Endure</span><span class="small-caps" data-i18n="strength-abbr"> [str]</span></button>           
-                        <input class="input-number" type="number" name="attr_endure" value="0" min="0" title="@{endure}" />         
+                        <!--- STAMINA --->
+                        <button type="action" name="act_dice_pool_stamina"><span data-i18n="stamina">Stamina</span><span class="small-caps" data-i18n="strength-abbr"> [str]</span></button>           
+                        <input class="input-number" type="number" name="attr_stamina" value="0" min="0" title="@{stamina}" />         
                         <input class="input-number" type="text" name="attr_strength" value="0" title="@{strength}" readonly />
                         <span class="equal">=</span>
-                        <input class="input-number" type="text" name="attr_endure_total" value="0" title="@{endure_total}" readonly />
+                        <input class="input-number" type="text" name="attr_stamina_total" value="0" title="@{stamina_total}" readonly />
                         <hr />    
                         <!--- FORCE --->
                         <button type="action" name="act_dice_pool_force"><span data-i18n="force">Force</span><span class="small-caps" data-i18n="strength-abbr"> [str]</span></button>
@@ -194,12 +194,12 @@
                         <span class="equal">=</span>
                         <input class="input-number" type="text" name="attr_fight_total" value="0" title="@{fight_total}" readonly />
                         <hr />
-                        <!--- SNEAK --->
-                        <button type="action" name="act_dice_pool_sneak"><span data-i18n="sneak">sneak</span><span class="small-caps" data-i18n="agility-abbr"> [agi]</span></button>
-                        <input class="input-number" type="number" name="attr_sneak" value="0" min="0" title="@{sneak}" />
+                        <!--- DRIVE --->
+                        <button type="action" name="act_dice_pool_drive"><span data-i18n="drive">drive</span><span class="small-caps" data-i18n="agility-abbr"> [agi]</span></button>
+                        <input class="input-number" type="number" name="attr_drive" value="0" min="0" title="@{drive}" />
                         <input class="input-number" type="text" name="attr_agility" value="0" title="@{agility}" readonly />
                         <span class="equal">=</span>
-                        <input class="input-number" type="text" name="attr_sneak_total" value="0" title="@{sneak_total}" readonly />
+                        <input class="input-number" type="text" name="attr_drive_total" value="0" title="@{drive_total}" readonly />
                         <hr />
                         <!--- MOVE --->
                         <button type="action" name="act_dice_pool_move"><span data-i18n="move">move</span><span class="small-caps" data-i18n="agility-abbr"> [agi]</span></button>
@@ -215,47 +215,47 @@
                         <span class="equal">=</span>
                         <input class="input-number" type="text" name="attr_shoot_total" value="0" title="@{shoot_total}" readonly />
                         <hr />
-                        <!--- SCOUT --->
-                        <button type="action" name="act_dice_pool_scout"><span data-i18n="scout">scout</span><span class="small-caps" data-i18n="wits-abbr"> [wit]</span></button>
-                        <input class="input-number" type="number" name="attr_scout" value="0" min="0" title="@{scout}" />
+                        <!--- Observe --->
+                        <button type="action" name="act_dice_pool_observe"><span data-i18n="observe">observe</span><span class="small-caps" data-i18n="wits-abbr"> [wit]</span></button>
+                        <input class="input-number" type="number" name="attr_observe" value="0" min="0" title="@{observe}" />
                         <input class="input-number" type="text" name="attr_wits" value="0" title="@{wits}" readonly />
                         <span class="equal">=</span>
-                        <input class="input-number" type="text" name="attr_scout_total" value="0" title="@{scout_total}" readonly />
+                        <input class="input-number" type="text" name="attr_observe_total" value="0" title="@{observe_total}" readonly />
                         <hr />
-                         <!--- COMPREHEND --->
-                        <button type="action" name="act_dice_pool_comprehend"><span data-i18n="comprehend">comprehend</span><span class="small-caps" data-i18n="wits-abbr"> [wit]</span></button>
-                        <input class="input-number" type="number" name="attr_comprehend" value="0" min="0" title="@{comprehend}" />
+                         <!--- tinker --->
+                        <button type="action" name="act_dice_pool_tinker"><span data-i18n="tinker">tinker</span><span class="small-caps" data-i18n="wits-abbr"> [wit]</span></button>
+                        <input class="input-number" type="number" name="attr_tinker" value="0" min="0" title="@{tinker}" />
                         <input class="input-number" type="text" name="attr_wits" value="0" title="@{wits}" readonly />
                         <span class="equal">=</span>
-                        <input class="input-number" type="text" name="attr_comprehend_total" value="0" title="@{comprehend_total}" readonly />
+                        <input class="input-number" type="text" name="attr_tinker_total" value="0" title="@{tinker_total}" readonly />
                         <hr />
-                        <!--- KNOW THE ZONE --->
-                        <button type="action" name="act_dice_pool_know_the_zone"><span data-i18n="know_the_zone">Know the Zone</span><span class="small-caps" data-i18n="wits-abbr" style="font-size: 0.8em;"> [wit]</span></button>
-                        <input class="input-number" type="number" name="attr_know_the_zone" value="0" min="0" title="@{know_the_zone}" />
+                        <!--- survival --->
+                        <button type="action" name="act_dice_pool_survival"><span data-i18n="survival">survival</span><span class="small-caps" data-i18n="wits-abbr" style="font-size: 0.8em;"> [wit]</span></button>
+                        <input class="input-number" type="number" name="attr_survival" value="0" min="0" title="@{survival}" />
                         <input class="input-number" type="text" name="attr_wits" value="0" title="@{wits}" readonly />
                         <span class="equal">=</span>
-                        <input class="input-number" type="text" name="attr_know_the_zone_total" value="0" title="@{know_the_zone_total}" readonly />
+                        <input class="input-number" type="text" name="attr_survival_total" value="0" title="@{survival_total}" readonly />
                         <hr />
-                        <!--- SENSE EMOTION --->
-                        <button type="action" name="act_dice_pool_sense_emotion"><span data-i18n="sense_emotion">sense emotion</span><span class="small-caps" data-i18n="empathy-abbr"> [emp]</span></button>
-                        <input class="input-number" type="number" name="attr_sense_emotion" value="0" min="0" title="@{sense_emotion}" />
+                        <!--- magic --->
+                        <button type="action" name="act_dice_pool_magic"><span data-i18n="magic">magic</span><span class="small-caps" data-i18n="empathy-abbr"> [emp]</span></button>
+                        <input class="input-number" type="number" name="attr_magic" value="0" min="0" title="@{magic}" />
                         <input class="input-number" type="text" name="attr_empathy" value="0" title="@{empathy}" readonly />
                         <span class="equal">=</span>
-                        <input class="input-number" type="text" name="attr_sense_emotion_total" value="0" title="@{sense_emotion_total}" readonly />
+                        <input class="input-number" type="text" name="attr_magic_total" value="0" title="@{magic_total}" readonly />
                         <hr />
-                        <!--- MANIPULATE --->
-                        <button type="action" name="act_dice_pool_manipulate"><span data-i18n="manipulate">manipulate</span><span class="small-caps" data-i18n="empathy-abbr"> [emp]</span></button>
-                        <input class="input-number" type="number" name="attr_manipulate" value="0" min="0" title="@{manipulate}" />
+                        <!--- command --->
+                        <button type="action" name="act_dice_pool_command"><span data-i18n="command">command</span><span class="small-caps" data-i18n="empathy-abbr"> [emp]</span></button>
+                        <input class="input-number" type="number" name="attr_command" value="0" min="0" title="@{command}" />
                         <input class="input-number" type="text" name="attr_empathy" value="0" title="@{empathy}" readonly />
                         <span class="equal">=</span>
-                        <input class="input-number" type="text" name="attr_manipulate_total" value="0" title="@{manipulate_total}" readonly />
+                        <input class="input-number" type="text" name="attr_command_total" value="0" title="@{command_total}" readonly />
                         <hr />
-                        <!--- HEAL --->
-                        <button type="action" name="act_dice_pool_heal"><span data-i18n="heal">Heal</span><span class="small-caps" data-i18n="empathy-abbr"> [emp]</span></button>
-                        <input class="input-number" type="number" name="attr_heal" value="0" min="0" title="@{heal}" />
+                        <!--- soothe --->
+                        <button type="action" name="act_dice_pool_soothe"><span data-i18n="soothe">soothe</span><span class="small-caps" data-i18n="empathy-abbr"> [emp]</span></button>
+                        <input class="input-number" type="number" name="attr_soothe" value="0" min="0" title="@{soothe}" />
                         <input class="input-number" type="text" name="attr_empathy" value="0" title="@{empathy}" readonly />
                         <span class="equal">=</span>
-                        <input class="input-number" type="text" name="attr_heal_total" value="0" title="@{heal_total}" readonly />
+                        <input class="input-number" type="text" name="attr_soothe_total" value="0" title="@{soothe_total}" readonly />
                     </div>
                     <div class="repeating-skill-grid">
                         <fieldset class="repeating_skills">
@@ -606,7 +606,7 @@
                         </div>
                     </div>
                     <div class="mutants-grid">
-                        <div class="mutant-box header"><h1 data-i18n="mutantions">MUTATIONS</h1></div>
+                        <div class="mutant-box header"><h1 data-i18n="mutants">MUTATIONS</h1></div>
                         <div class="dots">
                             <input name="attr_mutation" type="radio" value="0" checked/><span>0</span>
                             <input name="attr_mutation" type="radio" value="1"/><span>1</span>
@@ -621,18 +621,18 @@
                             <input name="attr_mutation" type="radio" value="10"/><span>10</span>
                         </div>
                         <div class="talents-box4">
-                            <fieldset class="repeating_mutantions">
+                            <fieldset class="repeating_mutants">
                                 <input class="display" name="attr_reveal" type="hidden" value="display,settings,collapse," />
-                                <div class="grid mutantions-grid">
+                                <div class="grid mutants-grid">
                                     <button class="toggles toggles-repeating" name="act_settings" type="action">y</button>
                                     <button class="collapse" name="act_collapse" type="action">
-                                        <span name="attr_mutantion_name" title="Mutant Power name"></span>
+                                        <span name="attr_mutant_name" title="Mutant Power name"></span>
                                     </button>
-                                     <span class="collapsible" name="attr_mutantion_description"></span>
+                                     <span class="collapsible" name="attr_mutant_description"></span>
                                 </div>
-                                <div class="grid mutantions-grid settings">
-                                    <input class="talents-box1 input" type="text" name="attr_mutantion_name" value="" title="@{repeating_mutantions_$X_mutantion_name}" placeholder="Name" />
-                                    <textarea class="talents-box4 input-textarea" name="attr_mutantion_description" title="@{repeating_mutantions_$X_mutantion_description}" placeholder="description"></textarea>
+                                <div class="grid mutants-grid settings">
+                                    <input class="talents-box1 input" type="text" name="attr_mutant_name" value="" title="@{repeating_mutants_$X_mutant_name}" placeholder="Name" />
+                                    <textarea class="talents-box4 input-textarea" name="attr_mutant_description" title="@{repeating_mutants_$X_mutant_description}" placeholder="description"></textarea>
                                 </div>
                             </fieldset>                    
                         </div>
@@ -642,13 +642,13 @@
                     <div class="nec-grid">
                         <div class="header"><h1 data-i18n="nec-u">NECESSITIES</h1></div>        
                         <div>        
-                            <img alt="chocolate bar representing grub" src="https://raw.githubusercontent.com/clevett/roll20-character-sheets/myz-v1.2/Mutant%20Year%20Zero/images/grub.png" /><input name="attr_grub" placeholder="0" title="@{grub}" type="number" value="" />
+                            <img alt="chocolate bar representing grub" src="https://raw.githubusercontent.com/yasashiitora/roll20-character-sheets/crz-1.0/Carnival%20Row%20Zero/images/grub.png" /><input name="attr_grub" placeholder="0" title="@{grub}" type="number" value="" />
                         </div>
                         <div>
-                            <img alt="water bottle" src="https://raw.githubusercontent.com/clevett/roll20-character-sheets/myz-v1.2/Mutant%20Year%20Zero/images/water.png" /><input name="attr_water" placeholder="0" title="@{water}" type="number" value="" />
+                            <img alt="water bottle" src="https://raw.githubusercontent.com/yasashiitora/roll20-character-sheets/crz-1.0/Carnival%20Row%20Zero/images/water.png" /><input name="attr_water" placeholder="0" title="@{water}" type="number" value="" />
                         </div>
                         <div>
-                            <img alt="bullets" src="https://raw.githubusercontent.com/clevett/roll20-character-sheets/myz-v1.2/Mutant%20Year%20Zero/images/bullet.png" /><input name="attr_bullets" placeholder="0" title="@{bullets}" type="number" value="" />
+                            <img alt="bullets" src="https://raw.githubusercontent.com/yasashiitora/roll20-character-sheets/crz-1.0/Carnival%20Row%20Zero/images/bullet.png" /><input name="attr_bullets" placeholder="0" title="@{bullets}" type="number" value="" />
                         </div>
                     </div>
                 </div>
@@ -1046,18 +1046,18 @@ Object.keys(damages).forEach(stat => {
 
 /* skill total calcs */
 const attributes = { 
-    endure: 'strength',
+    stamina: 'strength',
     force: 'strength',
     fight: 'strength',
-    sneak: 'agility',
+    drive: 'agility',
     move: 'agility',
     shoot: 'agility',
-    scout: 'wits',
-    comprehend: `wits`,
-    know_the_zone: 'wits',
-    sense_emotion : 'empathy',
-    manipulate: 'empathy',
-    heal: 'empathy',
+    observe: 'wits',
+    tinker: `wits`,
+    survival: 'wits',
+    magic : 'empathy',
+    command: 'empathy',
+    soothe: 'empathy',
 };
 Object.keys(attributes).forEach(skill => {
     on(`change:${skill} change:${attributes[skill]}`, () => {
@@ -1219,7 +1219,7 @@ on("change:armor1_equiped change:armor1_damage change:armor1_bonus change:armor2
 
 
     //SKILLS & SKILL NAME NEEDS UPDATE ON CLICK
-    ['endure','force','fight','sneak','move','shoot','scout','comprehend','know_the_zone','sense_emotion','manipulate','heal'].forEach(skill => {
+    ['stamina','force','fight','drive','move','shoot','observe','tinker','survival','magic','command','soothe'].forEach(skill => {
         on(`clicked:dice_pool_${skill}`, (eventinfo) => { 
             dicePoolButtons(skill);
         });
@@ -1267,7 +1267,7 @@ on("change:armor1_equiped change:armor1_damage change:armor1_bonus change:armor2
     });
     
    //toggle off and on show setting
-   ["repeating_injuries:settings", "repeating_talents:settings", "repeating_talents:collapse", "repeating_mutantions:settings", "repeating_mutantions:collapse", "repeating_skills:settings", "repeating_gear:settings", "repeating_gear:collapse","repeating_vehicle:collapse", "repeating_vehicle:settings", "repeating_relationships:settings", "repeating_notes:settings"].forEach((attr) => {
+   ["repeating_injuries:settings", "repeating_talents:settings", "repeating_talents:collapse", "repeating_mutants:settings", "repeating_mutants:collapse", "repeating_skills:settings", "repeating_gear:settings", "repeating_gear:collapse","repeating_vehicle:collapse", "repeating_vehicle:settings", "repeating_relationships:settings", "repeating_notes:settings"].forEach((attr) => {
         on(`clicked:${attr}`, (eventinfo) => {
             const word    = eventinfo.sourceAttribute.split("_")[3];
             const reveal  = eventinfo.sourceAttribute.replace(word, "reveal");

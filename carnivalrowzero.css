@@ -1041,7 +1041,7 @@ div.sheet-talents-grid span {
   grid-column: 1 / 4;
 }
 
-/* ------------------------------- Mutantions */
+/* ------------------------------- mutations */
 div.sheet-mutations-grid {
   display: grid;
   grid-template-columns: 1fr;
